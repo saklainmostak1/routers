@@ -12,6 +12,7 @@ import Main from './layout/Main';
 
 
 function App() {
+  
   const router = createBrowserRouter([
     {
       path: '/', 
@@ -28,7 +29,7 @@ function App() {
           element: <Friends></Friends> 
         },
 
-        
+
         {
           path: '/friend/:friendId',
           loader: async({params})=>{
